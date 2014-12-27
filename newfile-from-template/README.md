@@ -15,4 +15,3 @@ New html -- ctrl+shift+h;
 New js -- ctrl+shift+j;
 New css -- ctrl+shift+c;
 New php -- ctrl+shift+p;
--------

@@ -1,0 +1,13 @@
+{
+    "name": "newfile from template",
+    "title": "newfile from template",
+    "description": "you can new a file from your template,you can edit the template.it's so easy!",
+    "homepage": "https://github.com/sunray97/newfile-from-template",
+    "version": "1.0.0",
+    "author": "Ray Sun",
+    "license": "MIT",
+    "engines": {
+        "brackets": ">=0.24.0"
+    }
+   
+}

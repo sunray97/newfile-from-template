@@ -4,14 +4,14 @@ Newfile from template
 
 templates:
 ---------
--	##html-template.html 
--	##js-template.js
--	##css-template.css
--	##php-template.php
+- html-template.html
+- js-template.js
+-  css-template.css
+- php-template.php
 
 Hotkey:
 -------
--	##New html -- ctrl+shift+h;
--	##New js -- ctrl+shift+j;
--	##New css -- ctrl+shift+c;
--	##New php -- ctrl+shift+p;
+- New html -- ctrl+shift+h;
+- New js -- ctrl+shift+j;
+- New css -- ctrl+shift+c;
+- New php -- ctrl+shift+p;

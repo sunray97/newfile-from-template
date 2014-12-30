@@ -7,7 +7,11 @@
     "author": "Ray Sun",
     "license": "MIT",
     "engines": {
+<<<<<<< HEAD
         "brackets": ">=0.40.0"
+=======
+        "brackets": ">=1.1.1"
+>>>>>>> 37c0f145a6cef7fe88b6c1f045e159527d39f105
     }
    
 }

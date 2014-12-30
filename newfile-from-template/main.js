@@ -64,9 +64,6 @@ define(function (require, exports, module) {
     {
         return CommandManager.execute(Commands.CMD_ADD_TO_WORKINGSET_AND_OPEN, {fullPath: file.fullPath});
     }
-    function reName(file){
-    	return CommandManager.execute(Commands.handleFileRename,{fullPath:file.fullPath});
-    }
     function createNewFile(filename)
     {
         var basePath = ProjectManager.getSelectedItem().fullPath;

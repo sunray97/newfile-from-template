@@ -15,3 +15,7 @@ Hotkey:
 - New js -- ctrl+shift+j;
 - New css -- ctrl+shift+c;
 - New php -- ctrl+shift+p;
+
+Version 1.1.0
+-------------
+Update:Create a new file by your selected file as same path.the new file's name is your selected file's name.new.html(js or css or php).

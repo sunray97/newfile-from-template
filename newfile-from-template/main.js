@@ -10,6 +10,7 @@ define(function (require, exports, module) {
         FileUtils = brackets.getModule("file/FileUtils"),
         FileSystem = brackets.getModule("filesystem/FileSystem"),
         ProjectManager = brackets.getModule("project/ProjectManager"),
+        ProjectModel = brackets.getModule("project/ProjectModel"),
         AppInit = brackets.getModule("utils/AppInit");
     
     var template
@@ -61,40 +62,25 @@ define(function (require, exports, module) {
     }
     function addFileToWorkingSet(file)
     {
-        return CommandManager.execute(Commands.FILE_ADD_TO_WORKING_SET, {fullPath: file.fullPath});
+        return CommandManager.execute(Commands.CMD_ADD_TO_WORKINGSET_AND_OPEN, {fullPath: file.fullPath});
     }
-    function tryOpenExistingFile(file)
-    {
-        var promise = $.Deferred();
-        file.exists(function(err, exists){
-            if(!err && exists)
-            {
-                return addFileToWorkingSet(file);
-            }
-            promise.reject();
-        });
-        return promise;
+    function reName(file){
+    	return CommandManager.execute(Commands.handleFileRename,{fullPath:file.fullPath});
     }
-    function registerKeyBindings()
-    {
-        KeyBindingManager.addBinding(NEW_FILE_EXECUTE, { key: getShortcutString() });
-    }
-
     function createNewFile(filename)
     {
-        var basePath = ProjectManager.getProjectRoot().fullPath;
-        var file = FileSystem.getFileForPath(basePath + "/" + filename);
+        var basePath = ProjectManager.getSelectedItem().fullPath;
+        var file = FileSystem.getFileForPath(basePath + "." + filename);
         var dir = FileUtils.getDirectoryPath(file.fullPath);
                 mkdirp(dir)
-                    .then(function()   { return createFile(file); })
-                    .then(function()   { return addFileToWorkingSet(file); })
-    }
+                    .then(function()   { return createFile(file); }) 
+                    .then(function()   { return addFileToWorkingSet(file); }) 
+ }				
     
     
     function newhtml() {
     	template = require('text!html-template.html');
     	createNewFile('new.html');
-    	
     }
     function newjs() {
     	template = require('text!js-template.js');

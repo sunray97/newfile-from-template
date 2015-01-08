@@ -13,7 +13,7 @@ define(function (require, exports, module) {
         ProjectModel = brackets.getModule("project/ProjectModel"),
         AppInit = brackets.getModule("utils/AppInit");
     
-    var template
+    var template;
     function mkdir(dir)
     {
         var promise = $.Deferred();
@@ -66,7 +66,8 @@ define(function (require, exports, module) {
     }
     function createNewFile(filename)
     {
-        var basePath = ProjectManager.getSelectedItem().fullPath;
+        var fullBasePath = ProjectManager.getSelectedItem().fullPath;
+        var basePath = fullBasePath.substring(0,fullBasePath.lastIndexOf("."));
         var file = FileSystem.getFileForPath(basePath + "." + filename);
         var dir = FileUtils.getDirectoryPath(file.fullPath);
                 mkdirp(dir)

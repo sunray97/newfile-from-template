@@ -1,16 +1,17 @@
 newfile-from-template
 =====================
-###it's an Extension of Brackets,you can new a file from your template,you can edit the template.it's so easy!
+It's an Extension of [Brackets](http://brackets.io). You can create a new file from a template so you can start writing main content directly. It's so easy!
 
 How to use:
 ----------
-it in your menu "new as" when your install complete and you can use hotkey too.<b>if you want edit the template don't change the filename!
+A menu "New as" appears in the toolbar of Brackets when you reload it after installation. Select any of the below listed templates and a new file will be created in the current working directory. You can use hotkey too.
+**If you want edit the template don't change the filename!**
 
-templates:
+Templates:
 ---------
 - html-template.html
 - js-template.js
--  css-template.css
+- css-template.css
 - php-template.php
 
 Hotkey:
@@ -22,4 +23,4 @@ Hotkey:
 
 Version 1.1.0
 -------------
-Update:Create a new file by your selected file as same path.the new file's name is your selected file's name.new.html(js or css or php).
+Update : Create a new file by selecting a file of current path. The new file's name will be your selected file's name with **.new.html(js or css or php)** in the end.

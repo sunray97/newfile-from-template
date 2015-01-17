@@ -24,3 +24,7 @@ Hotkey:
 Version 1.1.0
 -------------
 Update : Create a new file by selecting a file of current path. The new file's name will be your selected file's name with **.new.html(js or css or php)** in the end.
+
+Version 1.1.1
+-------------
+Update : Change the introduction.

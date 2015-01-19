@@ -3,12 +3,12 @@
     "title": "newfile-from-template",
     "description": "you can new a file from your template,you can edit the template.it's so easy!",
     "homepage": "https://github.com/sunray97/newfile-from-template",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "author": "Ray Sun",
     "license": "MIT",
     "engines": {
         "brackets": ">=0.40.0",
-        "brackets": ">=1.1.1"
+        "brackets": ">=1.1.0"
     }
    
 }
